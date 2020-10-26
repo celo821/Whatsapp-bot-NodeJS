@@ -5,6 +5,7 @@ function execute(user, msg) {
   //banco.db[user].stage = 0;
 
   if (estagioInterno === 1) {
+    
     banco.db[user].stage = 4;
 
     return stages.step[4].obj.execute(user, "");
